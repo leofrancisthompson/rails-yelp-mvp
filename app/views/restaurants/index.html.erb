@@ -1,0 +1,19 @@
+
+<div class="restaurants-container">
+  <p class="notice"><%= notice %></p>
+
+  <h1 class= "headers"> Restaurant Finder</h1>
+
+  <div class="restaurant-cards">
+    <% @restaurants.each do |restaurant| %>
+      <div class="restaurant-card">
+        <%= render partial: 'restaurant', locals: { restaurant: restaurant } %>
+        <p class="restaurant-link">
+          <%= link_to "More info", restaurant %>
+        </p>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<%= link_to "New restaurant", new_restaurant_path, class: "new-restaurant-link" %>

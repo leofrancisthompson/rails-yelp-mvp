@@ -1,15 +1,130 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+/* Global styles */
+.restaurants-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.notice {
+  color: green;
+}
+
+/* Restaurant card styles */
+.restaurant-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.restaurant-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-link {
+  margin-top: 10px;
+}
+
+.restaurant-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.restaurant-link a:hover {
+  text-decoration: underline;
+}
+
+/* New restaurant link style */
+.new-restaurant-link {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #007bff;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.new-restaurant-link:hover {
+  color: #0056b3;
+}
+
+.reviews-heading {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.review-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+  text-align: center;
+}
+
+.review-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+
+.headers {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Form and Details styles */
+.container-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.centered-form {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.back-link {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.restaurant-details {
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.restaurant-info {
+  margin-bottom: 15px;
+}
+
+.restaurant-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.restaurant-address,
+.restaurant-category {
+  font-size: 16px;
+  margin: 0;
+}
+
